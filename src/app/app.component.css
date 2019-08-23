@@ -1,4 +1,12 @@
 h1{
-    font-size: 50px;
+    font-size: 400%;
     font-family: 'Libre Caslon Display', serif;
+    color: #996633;
+    text-align: center;
+}
+.jumbotron{
+    background-color:#1C2833;
+}
+p{
+    color: #F2F4F4;
 }
