@@ -14,7 +14,15 @@
   </div>
 </div>
 </div><br>
-<h2> My Favorite quotes </h2>
+<div>
+    <h3>Quotes</h3>
+    <hr>
+    <ul>
+        <li *ngFor='let quotes of quote'>
+          {{quotes.name}}
+        </li>
+    </ul>
+  </div>
 
 <router-outlet></router-outlet>
 </div>
