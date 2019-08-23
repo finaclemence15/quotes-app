@@ -5,8 +5,16 @@ h1{
     text-align: center;
 }
 .jumbotron{
-    background-color:#1C2833;
+    /* background-color:rgb(24, 24, 31); */
+    background-color:black;
+}
+#head2{
+    color: #FDFEFE;
+    font-size: 200%;
+    font-family: 'Play', sans-serif;  
 }
 p{
-    color: #F2F4F4;
+    color: #FDFEFE;
+    font-size: 150%;
+    font-family: 'Play', sans-serif;
 }
