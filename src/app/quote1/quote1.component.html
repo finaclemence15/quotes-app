@@ -12,7 +12,7 @@
         </ul>
         <div> <button (click)='toggleDetails(i)' class="btn btn-primary">Show Author</button> </div>
         <div *ngIf='quotes.showAuthor'>
-          <app-quote1-details [quotes]='quotes' (isComplete)='deleteQuotes($event,i)'></app-quote1-details>
+          <app-quote1-details *ngIf='quotes.showAuthor' [quotes]='quotes' (isComplete)='deleteQuotes($event,i)'></app-quote1-details>
         </div>
       </div>
     </div>

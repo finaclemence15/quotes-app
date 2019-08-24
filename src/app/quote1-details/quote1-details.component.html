@@ -1,4 +1,6 @@
 <!-- <p>quote1-details works!</p> -->
 <p>{{quotes.author}}</p>
-<button (click)= 'goalComplete(true)' class="btn btn-success">Up Vote</button> <br> <br>
-<button (click)= 'goalComplete(true)' class="btn btn-warning">Down Vote</button>
+<p>This Quotes was Published in {{quotes.completeDate|dateCount}} days</p>
+<button (click)= 'quotesDelete(true)' class="btn btn-outline-primary">Delete Quotes</button> <br> <br>
+<button (click)= 'quotesComplete(true)' class="btn btn-success">Up Vote</button>
+<button (click)= 'quotesComplete(true)' class="btn btn-warning">Down Vote</button>
