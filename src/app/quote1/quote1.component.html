@@ -6,8 +6,9 @@
     <div class="col-md-6">
       <div *ngFor='let quotes of quote; let i = index '>
         <ul>
-          <li> {{quotes.name}} </li>
+          <!-- <li> {{quotes.name}} </li> -->
           <!-- <li *ngFor='let quotes of quote'> -->
+              <li>{{quotes.name}} due on {{quotes.completeDate|date|uppercase}}</li> 
         </ul>
         <div> <button (click)='toggleDetails(i)' class="btn btn-primary">Show Author</button> </div>
         <div *ngIf='quotes.showAuthor'>
@@ -15,5 +16,8 @@
         </div>
       </div>
     </div>
+    <div class="col-md-6">
+        <app-quote1-form (addQuotes)="addNewQuotes($event)"></app-quote1-form>
+      </div>
   </div>
 </div>
