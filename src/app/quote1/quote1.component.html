@@ -1,12 +1,19 @@
 <!-- <p>quote1 works!</p> -->
-        <h3>Quotes</h3>
-        <hr>
+<div class="container-fluid">
+  <h3>Quotes</h3>
+  <hr>
+  <div class="row">
+    <div class="col-md-6">
+      <div *ngFor='let quotes of quote; let i = index '>
         <ul>
-          <div *ngFor='let quotes of quote; let i = index '>
-            <li> {{quotes.name}} </li>
-            <!-- <li *ngFor='let quotes of quote'> -->
-                <button (click)='toggleDetails(i)'>Show name</button>
-              <app-quote1-details *ngIf='quotes.showAuthor' [quotes]='quotes'></app-quote1-details>
-            </div>
+          <li> {{quotes.name}} </li>
+          <!-- <li *ngFor='let quotes of quote'> -->
         </ul>
-     
+        <div> <button (click)='toggleDetails(i)' class="btn btn-primary">Show Author</button> </div>
+        <div *ngIf='quotes.showAuthor'>
+          <app-quote1-details [quotes]='quotes' (isComplete)='deleteQuotes($event,i)'></app-quote1-details>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

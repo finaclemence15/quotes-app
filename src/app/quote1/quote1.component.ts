@@ -17,6 +17,11 @@ export class Quote1Component implements OnInit {
   toggleDetails(index){
     this.quote[index].showAuthor = !this.quote[index].showAuthor;
   }
+  completeQuotes(isComplete, index){
+    if (isComplete) {
+      this.quote.splice(index,1);
+    }
+  }
 
   constructor() { }
 
