@@ -3,10 +3,10 @@
         <hr>
         <ul>
           <div *ngFor='let quotes of quote; let i = index '>
-            <li> {{quote1.author}} </li>
+            <li> {{quotes.name}} </li>
             <!-- <li *ngFor='let quotes of quote'> -->
-                <button (click)='toggleDetails(i)'>Toggle Details</button>
-              <app-quote1-details *ngIf='quote1.showAuthor' [quotes]='quotes'></app-quote1-details>
+                <button (click)='toggleDetails(i)'>Show name</button>
+              <app-quote1-details *ngIf='quotes.showAuthor' [quotes]='quotes'></app-quote1-details>
             </div>
         </ul>
      
