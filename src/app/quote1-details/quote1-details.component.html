@@ -2,6 +2,8 @@
 <p>Says that "<strong> <em> {{quotes.author}}</em> </strong>"</p>
 <!-- <p>{{quotes.name}}</p> -->
 <p>This Quotes was Published in {{quotes.completeDate|dateCount}} days</p>
+<p>{{ upvote}}</p>
+<p>{{ downvote}}</p>
 <button (click)= 'quotesDelete(true)' class="btn btn-outline-primary">Delete Quote</button> <br> <br>
 <button (click)= 'quotesComplete(true)' class="btn btn-success" style="margin: 5px">Up Vote </button>  
 <button (click)= 'quotesComplete(true)' class="btn btn-warning" style="margin: 5px">Down Vote</button> <br> <br>
