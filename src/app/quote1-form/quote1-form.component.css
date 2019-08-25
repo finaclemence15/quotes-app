@@ -1,0 +1,26 @@
+.form1{
+    background-color: #996633;
+    border: 1px solid black;
+    color: #FDFEFE;
+    
+}
+#l1{
+  font-style: oblique;
+  font-size: 30px;
+  font-family: 'Times New Roman', Times, serif;
+}
+#btn{
+    background-color: #FDFEFE;
+    color: #996633;
+    border: none;
+    width:22%;
+    font-size:25px;
+    border-radius: 20px;
+    font-style: oblique;
+}
+#hd2{
+  font-style: oblique;
+  font-size: 40px;
+  font-family: 'Times New Roman', Times, serif;
+  text-decoration: underline;
+}
